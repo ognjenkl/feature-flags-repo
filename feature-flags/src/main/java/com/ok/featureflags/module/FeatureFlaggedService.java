@@ -1,4 +1,4 @@
-package com.ok.featureflags.modul;
+package com.ok.featureflags.module;
 
 import org.springframework.stereotype.Component;
 

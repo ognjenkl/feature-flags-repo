@@ -1,4 +1,4 @@
-package com.ok.featureflags.modul;
+package com.ok.featureflags.module;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -9,7 +9,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import static org.mockito.Mockito.when;
 
 @SpringBootTest
-public class FeatureFlagModuleTest {
+public class FeatureFlagModuleIT {
 
     @MockBean
     private FeatureFlagService featureFlagService;
@@ -31,5 +31,4 @@ public class FeatureFlagModuleTest {
         Assertions.assertEquals("Tuesday good morning", service.goodMorning());
         Assertions.assertEquals("Tuesday good afternoon", service.goodAfternoon());
     }
-
 }
