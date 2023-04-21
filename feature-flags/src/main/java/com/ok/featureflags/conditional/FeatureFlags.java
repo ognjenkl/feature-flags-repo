@@ -11,5 +11,7 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 @RefreshScope
 @ConfigurationProperties("feature-flags")
 public class FeatureFlags {
-    Boolean feature1 = false;
+    Boolean feature1;
+    Boolean bookFeatureFlag;
+
 }

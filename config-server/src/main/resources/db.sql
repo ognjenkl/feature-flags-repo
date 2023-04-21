@@ -10,4 +10,5 @@ CREATE TABLE `properties` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `properties` (`application`, `profile`, `label`, `key`, `value`) VALUES
-    ('local', 'default', 'latest', 'feature-flags.is-new-papers-service-enabled', 'true');
+    ('local', 'default', 'latest', 'feature-flags.feature1', 'false'),
+    ('local', 'default', 'latest', 'feature-flags.bookFeatureFlag', 'true');
