@@ -6,7 +6,10 @@ import org.togglz.core.manager.FeatureManager;
 import org.togglz.core.manager.FeatureManagerBuilder;
 import org.togglz.core.repository.file.FileBasedStateRepository;
 import org.togglz.core.spi.FeatureManagerProvider;
+import org.togglz.core.user.FeatureUser;
 import org.togglz.core.user.NoOpUserProvider;
+import org.togglz.core.user.SimpleFeatureUser;
+import org.togglz.core.user.UserProvider;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -33,7 +36,13 @@ public class SingletonFeatureManagerProvider implements FeatureManagerProvider {
             featureManager = new FeatureManagerBuilder()
                     .featureEnum(Features.class)
                     .stateRepository(new FileBasedStateRepository(file))
-                    .userProvider(new NoOpUserProvider())
+                    .userProvider(new UserProvider() {
+                        @Override
+                        public FeatureUser getCurrentUser() {
+                            return new SimpleFeatureUser("admin", true);
+                        }
+                    })
+//                    .userProvider(new NoOpUserProvider())
                     .build();
         }
         return featureManager;
