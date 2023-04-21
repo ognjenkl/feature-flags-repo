@@ -16,6 +16,6 @@ public class FeatureFlagsController {
 
     @GetMapping
     public ResponseEntity<?> getFeatureFlags() {
-        return ResponseEntity.ok(featureFlags.getFeature1());
+        return ResponseEntity.ok(featureFlags);
     }
 }
