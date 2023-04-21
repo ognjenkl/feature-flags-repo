@@ -1,4 +1,4 @@
-package com.ok.featureflags.module;
+package com.ok.featureflags.togglz.module;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

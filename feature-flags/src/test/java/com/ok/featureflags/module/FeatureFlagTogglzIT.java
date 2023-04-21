@@ -1,5 +1,6 @@
 package com.ok.featureflags.module;
 
+import com.ok.featureflags.togglz.module.GreetingService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.ok.featureflags.module;
+package com.ok.featureflags.togglz.module;
 
 public interface FeatureFlagService {
     Boolean isNewServiceEnabled();

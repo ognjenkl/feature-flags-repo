@@ -1,7 +1,7 @@
-package com.ok.featureflags.adapter;
+package com.ok.featureflags.togglz.adapter;
 
-import com.ok.featureflags.module.FeatureFlagService;
-import com.ok.featureflags.module.Features;
+import com.ok.featureflags.togglz.module.FeatureFlagService;
+import com.ok.featureflags.togglz.module.Features;
 import org.springframework.stereotype.Component;
 
 @Component

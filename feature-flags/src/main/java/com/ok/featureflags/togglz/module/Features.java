@@ -1,4 +1,4 @@
-package com.ok.featureflags.module;
+package com.ok.featureflags.togglz.module;
 
 import org.togglz.core.Feature;
 import org.togglz.core.context.FeatureContext;

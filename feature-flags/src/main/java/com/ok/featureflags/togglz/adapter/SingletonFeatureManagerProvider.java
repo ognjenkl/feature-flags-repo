@@ -1,13 +1,12 @@
-package com.ok.featureflags.adapter;
+package com.ok.featureflags.togglz.adapter;
 
-import com.ok.featureflags.module.Features;
+import com.ok.featureflags.togglz.module.Features;
 import org.springframework.util.ResourceUtils;
 import org.togglz.core.manager.FeatureManager;
 import org.togglz.core.manager.FeatureManagerBuilder;
 import org.togglz.core.repository.file.FileBasedStateRepository;
 import org.togglz.core.spi.FeatureManagerProvider;
 import org.togglz.core.user.FeatureUser;
-import org.togglz.core.user.NoOpUserProvider;
 import org.togglz.core.user.SimpleFeatureUser;
 import org.togglz.core.user.UserProvider;
 

@@ -1,6 +1,6 @@
 package com.ok.featureflags;
 
-import com.ok.featureflags.module.Features;
+import com.ok.featureflags.togglz.module.Features;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;

@@ -1,1 +1,1 @@
-com.ok.featureflags.adapter.SingletonFeatureManagerProvider
+com.ok.featureflags.togglz.adapter.SingletonFeatureManagerProvider
