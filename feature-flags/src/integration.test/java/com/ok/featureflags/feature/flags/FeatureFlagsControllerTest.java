@@ -1,4 +1,4 @@
-package com.ok.featureflags.conditional;
+package com.ok.featureflags.feature.flags;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

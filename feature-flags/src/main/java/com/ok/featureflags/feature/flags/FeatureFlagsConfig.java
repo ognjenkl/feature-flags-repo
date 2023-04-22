@@ -1,4 +1,4 @@
-package com.ok.featureflags.conditional;
+package com.ok.featureflags.feature.flags;
 
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;

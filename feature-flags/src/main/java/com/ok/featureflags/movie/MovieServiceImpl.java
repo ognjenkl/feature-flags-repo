@@ -1,4 +1,4 @@
-package com.ok.featureflags.book;
+package com.ok.featureflags.movie;
 
 import com.ok.featureflags.feature.flags.FeatureFlags;
 import lombok.RequiredArgsConstructor;
@@ -10,22 +10,22 @@ import javax.annotation.PostConstruct;
 @RefreshScope
 @RequiredArgsConstructor
 @Service
-public class BookServiceImpl implements BookService {
+public class MovieServiceImpl implements MovieService {
 
-    private BookService bookService;
+    private MovieService movieService;
     private final FeatureFlags featureFlags;
 
     @PostConstruct
     private void init() {
-        if (featureFlags.getBook()) {
-            bookService = new MostReadBookNewService();
+        if (featureFlags.getMovie()) {
+            movieService = new MovieNewService();
         } else {
-            bookService = new MostReadBookOldService();
+            movieService = new MovieOldService();
         }
     }
 
     @Override
-    public String getMostReadBookTitle() {
-        return bookService.getMostReadBookTitle();
+    public String getTheBestMovie() {
+        return movieService.getTheBestMovie();
     }
 }
