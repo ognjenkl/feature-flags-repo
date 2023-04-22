@@ -1,0 +1,8 @@
+spring:
+    application:
+        name: local
+    cloud:
+        config:
+            label: latest
+            profile: default
+            uri: http://localhost:8081
