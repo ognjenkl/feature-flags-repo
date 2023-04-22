@@ -1,7 +1,7 @@
 CREATE DATABASE IF NOT EXISTS `feature_flags_configuration` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `feature_flags_configuration`;
 
-CREATE TABLE IF NOT EXISTS `properties`
+CREATE TABLE IF NOT EXISTS `ff_properties`
 (
     `id`          int      NOT NULL AUTO_INCREMENT,
     `application` varchar(255)      DEFAULT NULL,
@@ -16,6 +16,6 @@ CREATE TABLE IF NOT EXISTS `properties`
   DEFAULT CHARSET = utf8mb4
   COLLATE = utf8mb4_0900_ai_ci;
 
-INSERT INTO `properties` (`id`, `application`, `profile`, `label`, `key`, `value`, `updatedOn`)
+INSERT INTO `ff_properties` (`id`, `application`, `profile`, `label`, `key`, `value`, `updatedOn`)
 VALUES (1, 'local', 'default', 'latest', 'feature-flags.feature', 'false', '2023-04-22 17:51:14'),
        (2, 'local', 'default', 'latest', 'feature-flags.book', 'false', '2023-04-22 17:56:48');

@@ -8,7 +8,7 @@ spring:
             server:
                 jdbc:
                     order: 1
-                    sql: SELECT `key`, `value` FROM `properties` where `application`=?
+                    sql: SELECT `key`, `value` FROM `ff_properties` where `application`=?
                         and `profile`=? and `label`=?
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver

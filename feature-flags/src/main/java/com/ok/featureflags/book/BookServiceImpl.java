@@ -7,9 +7,9 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 
-@Service
-@RequiredArgsConstructor
 @RefreshScope
+@RequiredArgsConstructor
+@Service
 public class BookServiceImpl implements BookService {
 
     private BookService bookService;
