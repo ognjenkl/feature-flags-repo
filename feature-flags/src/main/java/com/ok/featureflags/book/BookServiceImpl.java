@@ -17,7 +17,7 @@ public class BookServiceImpl implements BookService {
 
     @PostConstruct
     private void init() {
-        if (featureFlags.getBookFeatureFlag()) {
+        if (featureFlags.getBook()) {
             bookService = new MostReadBookNewService();
         } else {
             bookService = new MostReadBookOldService();
