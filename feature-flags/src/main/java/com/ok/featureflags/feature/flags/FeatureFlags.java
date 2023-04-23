@@ -12,4 +12,5 @@ public class FeatureFlags {
     Boolean feature;
     Boolean book;
     Boolean movie;
+    Boolean music;
 }

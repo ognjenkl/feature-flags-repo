@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS `feature_flags_configuration` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE IF NOT EXISTS `feature_flags_configuration` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */;
 USE `feature_flags_configuration`;
 
 CREATE TABLE IF NOT EXISTS `ff_properties`
@@ -18,4 +18,5 @@ CREATE TABLE IF NOT EXISTS `ff_properties`
 INSERT INTO `ff_properties` (`application`, `profile`, `label`, `key`, `value`)
 VALUES ('local', 'default', 'latest', 'feature-flags.feature', 'false'),
        ('local', 'default', 'latest', 'feature-flags.book', 'false'),
-       ('local', 'default', 'latest', 'feature-flags.movie', 'false');
+       ('local', 'default', 'latest', 'feature-flags.movie', 'false'),
+       ('local', 'default', 'latest', 'feature-flags.music', 'false');
