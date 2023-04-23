@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Configuration;
 @RequiredArgsConstructor
 @Configuration
 public class MovieFactoryBeanConfig {
+//public class MovieFactoryBeanConfig extends WebSecurityConfigurerAdapter {
 
     private final FeatureFlags featureFlags;
 
