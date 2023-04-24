@@ -86,12 +86,17 @@
                 <version>4.21.1</version>
 
                 <configuration>
-                    <driver>com.mysql.cj.jdbc.Driver</driver>
-                    <url>jdbc:mysql://localhost:3306/feature_flags_configuration</url>
-                    <username>root</username>
-                    <password>root</password>
-                    <outputChangeLogFile>src/main/resources/db/changelog/liquibase-outputChangeLog.xml
+                    <propertyFile>src/main/resources/application.yml</propertyFile>
+                    <changeLogFile>src/main/resources/db/changelog.xml</changeLogFile>
+                    <!--                    <changeLogFile>${project.basedir}/src/main/resources/db/changelog.xml</changeLogFile>-->
+                    <outputChangeLogFile>${project.basedir}/src/main/resources/db/changelogs/01-initial-data-dump.xml
                     </outputChangeLogFile>
+                    <diffChangeLogFile>src/main/resources/db/changelogs/1_changelog.xml</diffChangeLogFile>
+                    <!--                    <diffChangeLogFile>${project.basedir}/src/main/resources/db/changelogs/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>-->
+                    <verbose>true</verbose>
+                    <logging>debug</logging>
+                    <diffTypes>tables,views,columns,indexes,foreignkeys,primarykeys,uniqueconstraints,data</diffTypes>
+                    <!--                    <diffTypes>data</diffTypes>-->
                 </configuration>
             </plugin>
         </plugins>
